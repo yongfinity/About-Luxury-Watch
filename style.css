@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 10px;
+    font-family: 'Noto Sans KR', sans-serif;
+    user-select: none;
+    background-color: #222222;
+}
+
+h1{
+    color: #D5AB85;
+}
+
+h2{
+    color: #D5AB85;
+}
+
+h3{
+    color: white;
+}
+
+p{
+    color: white;
+}
+
+/*----------------------------------------*/
+/*   메뉴   */
+.menuBar{
+    position: fixed; z-index: 2;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+
+    display: flex;
+    background: #161616;
+    opacity: 0.8;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+}
+
+/*   메뉴 왼쪽 상단 로고   */
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: #D5AB85;
+}
+
+.logo a{
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 29px;
+    letter-spacing: 1rem;
+}
+
+/*   메뉴 항목   */
+.items{
+    display: flex;
+    list-style: none;
+
+}
+
+.items li{
+    padding: 10px 40px;
+    text-align: right;
+}
+
+.items li a{
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 29px;
+    letter-spacing: 0.33rem;
+    color: #D5AB85;
+}
+
+.items li:hover{
+    background-color: #2b2b2b;
+}
+
+#toggleBtn{
+    position: absolute;
+    right: 30px;
+    display: none;
+    top: 35px;
+}
+
+/*----------------------------------------*/
+
+#container{
+    width: 1920px;
+    height: 1080px;
+    margin: auto;
+    background-color: #222222;
+}
+
+#complicationBox{
+    display: flex;
+    position: absolute;
+    justify-content: space-around;
+}
+
+.row{
+    width: 100%;
+    display: flex;
+}
+
+/* 공간 */
+.col-1{width: 8.33%; background-color: #222222;}
+.col-2{width: 16.66%; background-color: #222222;}
+.col-3{width: 24.99%; background-color: #222222;}
+.col-4{width: 33.32%; background-color: #222222;}
+.col-5{width: 41.65%; background-color: #222222;}
+.col-6{width: 49.98%; background-color: #222222;}
+.col-7{width: 58.31%; background-color: #222222; }
+.col-8{width: 66.64%; background-color: #222222; }
+.col-9{width: 74.97%; background-color: #222222;}
+.col-10{width: 83.3%; background-color: #222222;}
+.col-11{width: 91.63%; background-color: #222222;}
+.col-12{width: 100%; background-color: #222222;}
+
+/* 높이 */
+.h-max{height: 1080px;}
+
+.h-100{height: 100px;}
+.h-200{height: 200px;}
+.h-300{height: 300px;}
+.h-400{height: 400px;}
+.h-500{height: 500px;}
+.h-600{height: 600px;}
+.h-940{height: 940px;}
+
+.text-white{color: white;}
+.text-black{color: black;}
+.text-gold{color: #D5AB85;}
+
+.text-center{text-align: center;}
+.text-left{text-align: left;}
+.text-right{text-align: right;}
+
+.text-main-title{font-weight: 300; font-size: 8rem; letter-spacing: 3.5rem;}
+.text-title-50{font-weight: 200; font-size: 5rem; line-height: 5rem; letter-spacing: 0.1rem;}
+.text-title-70{font-weight: 300; font-size: 7rem; letter-spacing: 0.1rem;}
+.text-title-60{font-weight: 300; font-size: 6rem; letter-spacing: 0.1rem;}
+.text-normal-20{font-weight: 300; font-size: 2rem; line-height: 3rem; letter-spacing: 0.1rem;}
+.text-normal-15{font-weight: 300; font-size: 1.5rem; line-height: 2rem; letter-spacing: 0.1rem;}
+.text-normal-25{font-weight: 300; font-size: 2.5rem; line-height: 3.5rem; letter-spacing: 0.1rem;}
+.text-normal-30{font-weight: 300; font-size: 3rem; line-height: 4rem; letter-spacing: 0.1rem}
+.text-footer{font-weight: 400; font-size: 1.5rem; line-height: 3rem; letter-spacing: 0.1rem;}
+.text-menu{font-weight: 300; font-size: 2rem; line-height: 3rem; letter-spacing: 0.1rem;}
+
+.paddingT400{padding-top: 400px;}
+.paddingT300{padding-top: 300px;}
+.paddingT250{padding-top: 250px;}
+.paddingT200{padding-top: 200px;}
+.paddingT100{padding-top: 100px;}
+.paddingT50{padding-top: 50px;}
+.paddingT25{padding-top: 25px;}
+
+.paddingL95{padding-left: 95px;}
+.paddingL100{padding-left: 100px;}
+.paddingL20{padding-left: 20px;}
+.paddingT250{padding-top: 250px;}
+.padding100{padding: 50px 100px;}
+
+.paddingLR100{padding-left: 100px; padding-right: 100px;}
+
+/* 이미지 */
+.img-fit{height: 100%;}
+
+
+@media only screen and (max-width: 768px)
+{
+
+    .logo{
+        display: flex;
+        align-items: center;
+    }
+    
+    .logo a{
+        font-weight: 300;
+        font-size: 2rem;
+        line-height: 29px;
+        letter-spacing: 1rem;
+        padding: 10px 30px;
+    }
+    
+    .menuBar{
+        flex-direction: column;
+        /* 왼쪽으로 붙어보이기 위해 함 */
+        align-items: flex-start;
+        width: 100%;
+        padding: 10px 0px;
+    }
+
+    /* 아래로 정렬하게 만들기 */
+    .items{
+        /* 햄버거 버튼을 누르면 나오게 하려고 display none 함 */
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding-top: 20px;
+        display: none;
+    }
+
+    /* 마우스 올리는 메뉴바의 크기 길게 */
+    .items li{
+        width: 100%;
+        text-align: center;
+
+    }
+
+    #toggleBtn{
+        display: block;
+    }
+    
+    /*  .items.active,
+        .link.items.active{
+        display: flex;  이것도 가능 */
+    .items.active{
+        display: flex;
+    }
+
+    #container{
+        width: 100%;
+    }
+
+    .row{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* 공간 */
+    .col-1{width: 100%; background-color: #222222;}
+    .col-2{width: 100%; background-color: #222222;}
+    .col-3{width: 100%; background-color: #222222;}
+    .col-4{width: 100%; background-color: #222222;}
+    .col-5{width: 100%; background-color: #222222;}
+    .col-6{width: 100%; background-color: #222222;}
+    .col-7{width: 100%; background-color: #222222; }
+    .col-8{width: 100%; background-color: #222222; }
+    .col-9{width: 100%; background-color: #222222;}
+    .col-10{width: 100%; background-color: #222222;}
+    .col-11{width: 100%; background-color: #222222;}
+    .col-12{width: 100%; background-color: #222222;}
+
+
+}
